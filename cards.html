@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 360px;
+            padding: 30px 0px 0 0px ;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            position: relative;
+            overflow: hidden;
+            transition: .4s;
+        }
+        .container:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            scale: 1.1;
+            /* transform: skewX(2deg); */
+            rotate: -2deg;
+        }
+        .bg{
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            height: 130px;
+            width: 420px;
+            background-color: cadetblue;
+            rotate: 10deg;
+        }
+        .container > img{
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 99;
+            border: 2px solid rgb(246, 242, 242);
+
+        }
+        .container>i{
+            margin-top: 40px;
+            border: 2px solid black;
+            padding: 6px;
+            font-size: 22px;
+            border-radius: 50%;
+        }
+        .shape{
+            height: 40px;
+            background-color: cadetblue;
+            margin-top: 30px;
+            text-align: center;
+
+            
+        }
+        .shape>div:nth-child(1){
+            height: 30px;
+            width: 30px;
+            background-color: cadetblue;
+            rotate: 45deg;
+            margin: auto;
+            position: relative;
+            z-index: -1;
+            top: -12px;
+        }
+        .shape>div:nth-child(2){
+        display: flex;
+            gap: 30px;
+           justify-content: center;
+           transform: translateY(-17px);
+    }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+           <div class="bg"></div>  
+            <img src="./pexels-alexander-grey-1148998 (1).jpg">
+            <h2>John Doe</h2>
+            <h3>_____</h3> 
+        
+            <p style="margin: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae nihil</p>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <i class="fa-solid fa-envelope"></i>
+
+
+            <div class="shape"> 
+                <div ></div>
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        <!-- 
+        <div>   
+                 <div class="icon">
+         
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div> -->
+
+    </div>
+    </div>
+</body>
+</html>
